@@ -5,6 +5,6 @@ RUN apt install nodejs npm git wget -y
 
 COPY . .
 
-RUN npm install && node build && tsc --build
+RUN npm install && tsc --build && node build
 
 CMD ["tsc", "index.ts"]
