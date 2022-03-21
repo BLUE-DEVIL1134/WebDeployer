@@ -1,4 +1,4 @@
-FROM python3:latest
+FROM python:latest
 
 RUN apt update && apt upgrade -y
 RUN apt install nodejs npm -y
